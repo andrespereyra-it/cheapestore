@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke;
+}
+
+/* HEADER */
+
+header {
+  background-color: brown;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.header .look-for{
+  height: 30px;
+  width: 500px;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+}
+
+/* Navigation */
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* MAIN */
+
+.main-container {
+  padding: 2vw;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "slider slider slider"
+    "categories categories categories"
+    "top-offers top-offers top-offers"
+    "methods methods social"
+    "copyright copyright copyright";
+}
+
+.slider {
+  grid-area: slider;
+  background: url(../images/banner.gif) center / cover no-repeat;
+}
+
+@media (max-width: 480px) {
+  .slider {
+    height: 20vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .slider {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider {
+    height: 70vh;
+  }
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+  padding: 10px;
+}
+
+.categories {
+  grid-area: categories;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.category {
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .category {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .category {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .category {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.top-offers {
+  grid-area: top-offers;
+  padding: 10px;
+}
+
+/* NEWSLETTER */
+
+.newletter{
+  grid-area: newsletter;
+}
+
+/* FOOTER */
+
+footer {
+  grid-area: footer;
+}
+
+footer .footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .footer__info .methods {
+  grid-area: methods;
+  padding: 2vw;
+}
+
+footer .footer__info .social {
+  grid-area: social;
+  padding: 2vw;
+}
+
+footer .footer__info .social .social-item {
+  height: 30px;
+  width: 30px;
+}
+
+footer .footer__copyright {
+  grid-area: copiright;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Offers */
+
+.offers{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.offers .card{
+  padding: 5px;
+}
+
+@media (max-width: 480px) {
+  .offers .card .card__picture {
+    min-width: 50px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .offers .card .card__picture {
+    min-width: 50px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card__picture {
+    min-width: 50px;
+    height: 300px;
+  }
+}
+
+/* Men - Women */
+
+.offers__container {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  height: 100%;
+  width: 1200px;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .offers__container {
+    display:none;
+  }
+}
+
+.offers__container .card{
+  border-color: black;
+  border-style: solid;
+}
+
+.card__picture {
+  min-width: 50px;
+  height: 300px;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .card__picture {
+    min-width: 30px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card__picture {
+    min-width: 50px;
+    height: 300px;
+  }
+}
+
+.brands {
+  display: flex;
+  margin-top: 20px;
+  border-color: rgba(0, 0, 0, 0.034);
+}
+
+.brands__item {
+  border-color: rgba(0, 0, 0, 0.116);
+  border-style: solid;
+  background: rgba(0, 0, 0, 0.089);
+  width: 500px;
+  height: 250px;
+}
+
+.announcements {
+  margin-top: 20px;
+  border-color: rgba(0, 0, 0, 0.034);
+}
+
+.announcements__item {
+  margin-top: 10px;
+  border-color: rgba(0, 0, 0, 0.116);
+  border-style: solid;
+  background: rgba(0, 0, 0, 0.089);
+  width: 1300px;
+  height: 150px;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+}
+
+.contact__form {
+  margin-left: 200px;
+}
