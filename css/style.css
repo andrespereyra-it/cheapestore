@@ -6,13 +6,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: whitesmoke;
+  background-color: #ffffff;
 }
 
 /* HEADER */
 
 header {
-  background-color: brown;
+  background-color: #a91f29;
 }
 
 .header {
@@ -26,6 +26,7 @@ header {
 .header .look-for {
   height: 30px;
   width: 500px;
+  border-radius: 20px;
 }
 
 .logo {
