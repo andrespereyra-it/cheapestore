@@ -163,6 +163,7 @@ footer .footer__copyright {
 .offers {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 

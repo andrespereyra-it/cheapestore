@@ -1,0 +1,61 @@
+.offers{
+  
+  @include flexbox(center, center, wrap);
+
+  .card{
+
+    margin: 20px;
+    text-align: center;
+    width: 230px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s;
+    background: #fff;
+
+    &:hover{
+      transform: translatY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 480px) {
+      width: 150px;
+      height: 400px;
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+      width: 190px;
+      height: 420px;
+    }
+
+    .card__picture{
+      @media (max-width: 480px) {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+      }
+      @media (min-width: 481px) and (max-width: 1024px) {
+        width: 190px;
+        height: auto;
+        object-fit: cover;
+      }
+      @media (min-width: 1024px) {
+        width: 230px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+
+    .card__product-name{
+      font-weight: 400;
+    }
+
+    .card__product-price{
+      font-weight: 600;
+    }
+
+    .card__product-fees{
+      padding: 0 1rem;
+      font-weight: 300;
+    }
+  }
+}

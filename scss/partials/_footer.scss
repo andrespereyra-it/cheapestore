@@ -1,0 +1,31 @@
+footer{
+
+  .footer__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: map-get($colors, terciary);
+
+    .methods{
+      padding: 2vw;
+    }
+
+    .social{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2vw;
+
+      .social-item{
+        margin: 1rem;
+      }
+    }
+  }
+
+  .footer__copyright{
+    text-align: center;
+    padding: 5px;
+    background-color: map-get($colors, primary);
+    color: white;
+  }
+}

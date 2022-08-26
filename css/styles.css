@@ -1,0 +1,154 @@
+header {
+  background-color: #a91f29;
+}
+header .logo {
+  text-decoration: none;
+  color: black;
+}
+header .header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+header .header .look-for {
+  height: 30px;
+  width: 500px;
+  border-radius: 20px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+header nav ul li a:hover {
+  color: #64b1f3;
+  font-weight: bold;
+}
+
+footer .footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #ffa69b;
+}
+footer .footer__info .methods {
+  padding: 2vw;
+}
+footer .footer__info .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+}
+footer .footer__info .social .social-item {
+  margin: 1rem;
+}
+footer .footer__copyright {
+  text-align: center;
+  padding: 5px;
+  background-color: #a91f29;
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 15px;
+  text-align: start;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.116);
+}
+.swiper .swiper-slide:hover {
+  transform: translatY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.swiper .swiper-slide img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.offers .card {
+  margin: 20px;
+  text-align: center;
+  width: 230px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s;
+  background: #fff;
+}
+.offers .card:hover {
+  transform: translatY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 480px) {
+  .offers .card {
+    width: 150px;
+    height: 400px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .offers .card {
+    width: 190px;
+    height: 420px;
+  }
+}
+@media (max-width: 480px) {
+  .offers .card .card__picture {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .offers .card .card__picture {
+    width: 190px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1024px) {
+  .offers .card .card__picture {
+    width: 230px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+.offers .card .card__product-name {
+  font-weight: 400;
+}
+.offers .card .card__product-price {
+  font-weight: 600;
+}
+.offers .card .card__product-fees {
+  padding: 0 1rem;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=styles.css.map */

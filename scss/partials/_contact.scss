@@ -1,0 +1,5 @@
+.contact{
+  @include flexbox(center, center);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
