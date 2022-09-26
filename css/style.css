@@ -26,8 +26,7 @@ header {
 .header .look-for {
   height: 30px;
   width: 500px;
-  padding: 5px;
-  border-radius: 20px;
+  padding: 18px;
 }
 
 .logo {
@@ -101,9 +100,8 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
-  .category {
-    width: 50px;
-    height: 50px;
+  .categories {
+    display: none;
   }
 }
 
@@ -145,9 +143,17 @@ nav ul li a:hover {
 }
 
 .trending-brands .trending-brands__logos img {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 7px;
+}
+
+@media(min-width: 480px){
+  .trending-brands .trending-brands__logos img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
 }
 
 .trending-brands img:hover {
@@ -300,6 +306,12 @@ footer .footer__copyright {
 
 /* Contact */
 
+.contact-title{
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -307,12 +319,14 @@ footer .footer__copyright {
   justify-content: space-around;
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.contact {
   margin: 2rem;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.contact .contact__form .contact__form-submit button:hover{
+  -webkit-text-stroke: 2px black;
+  color: transparent;
 }
 
 @media (max-width: 990px) {
@@ -468,12 +482,14 @@ footer .footer__copyright {
 
 .cart-btn {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   padding: 0 5px 0 5px;
+  border-radius: 0%;
 }
 
 .cart-btn .bi:hover {
   color: #fff;
+  border-color: #000;
 }
 
 @media (max-width: 999px) {
