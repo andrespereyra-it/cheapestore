@@ -21,9 +21,7 @@
       <a class="logo" href="../index.html"><strong>CHEAPESTORE</strong></a>
       <input class="look-for" type="text" placeholder="Look for product, brand, category...">
       <button class="custom-btn">Login</button>
-      <button>
-        <i class="bi bi-cart" alt="shopping-cart-logo" height="12"></i>
-      </button>
+      <button href="" class="btn cart-btn"><i class="bi bi-cart" alt="shopping-cart-logo"></i></button>
     </div>
     <nav>
       <ul>
@@ -38,32 +36,37 @@
   <h1 class="clipped">Cheapestore</h1>
   <div class="container">
     <main>
-      <h2 class="title">CONTACT</h2>
+      <h2 class="title">CONTACT US</h2>
+      <p class="paragraph">For immediate assistance, <strong>CHEAPESTORE.COM</strong> customers can contact us by email
+        at <strong>customerservice@cheapestore.com</strong>, or by telephone Toll Free at
+        <strong>1-866-420-9999</strong></p>
+      <p class="paragraph">Need help with an order? Having difficulty using our site? Please use this form for all
+        customer service questions or problems.</p>
       <div>
         <section class="contact">
-            <form class="contact__form" action="" method="post">
-              <div class="mb-3">
-                <label for="fullName" class="form-label">Fullname</label>
-                <input type="text" class="form-control" id="fullName">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email">
-              </div>
-              <div class="mb-3 form-group">
-                <label for="question">Question</label>
-                <textarea class="form-control" id="question" rows="3"></textarea>
-              </div>
-              <div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
-
-            <div class="contact__address">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.6221882978507!2d-98.48650795000005!3d29.421653200000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58aa57e6a56f%3A0xf08a9ad66f03e879!2sHenry+B.+Gonzalez+Convention+Center!5e0!3m2!1sen!2sus!4v1393884854786"
-                ></iframe>
+          <form class="contact__form" action="" method="post">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Fullname</label>
+              <input type="text" class="form-control" id="fullName">
             </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3 form-group">
+              <label for="question">Question</label>
+              <textarea class="form-control" id="question" rows="3"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary"
+                style="color: #000; --bs-btn-color: #000; --bs-btn-border-color: #010;">Submit</button>
+            </div>
+          </form>
+
+          <div class="contact__address">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.6221882978507!2d-98.48650795000005!3d29.421653200000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58aa57e6a56f%3A0xf08a9ad66f03e879!2sHenry+B.+Gonzalez+Convention+Center!5e0!3m2!1sen!2sus!4v1393884854786"></iframe>
+          </div>
 
         </section>
       </div>
@@ -73,19 +76,19 @@
     <div class="footer__info">
       <section class="methods">
         <article class="methods__payment">
-          <h3>Payment Methods</h3>
-          <img src="../images/visa.svg" alt="visa" style="width: 80px;">
-          <img src="../images/mercado-pago.svg" alt="mercado-pago" style="width: 120px;">
+          <p>Payment Methods</p>
+          <img src="../images/visa.svg" alt="visa" class="methods-visa">
+          <img src="../images/mercado-pago.svg" alt="mercado-pago" class="methods-mercadopago">
         </article>
         <br>
         <article class="methods_shipping">
-          <h3>Shipping</h3>
-          <img src="../images/correo-argentino.png" alt="correo-argentino"  style="width: 110px;">
+          <p>Shipping</p>
+          <img src="../images/correo-argentino.png" alt="correo-argentino" class="methods-correo">
         </article>
       </section>
       <section class="social">
-        <i class="bi bi-instagram social-item" style="font-size:30px"></i>
-        <i class="bi bi-facebook social-item" style="font-size:30px"></i>
+        <a href=""><i class="bi bi-instagram social-item"></i></a>
+        <a href=""><i class="bi bi-facebook social-item"></i></a>
       </section>
     </div>
     <section class="footer__copyright">
