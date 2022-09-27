@@ -1,0 +1,33 @@
+.carousel {
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+  .carousel-inner {
+    .carousel-item {
+      img {
+        display: none;
+
+        @media (min-width: 481px) and (max-width: 1024px) {
+          height: 60vh;
+          object-fit: cover;
+        }
+
+        @media (min-width: 1024px) {
+          height: 90vh;
+          object-fit: cover;
+        }
+      }
+
+      .carousel-caption {
+        .bordered-title {
+          -webkit-text-stroke: 2px black;
+          color: transparent;
+        }
+        .bordered-paragraph {
+          -webkit-text-stroke: 2px black;
+        }
+      }
+    }
+  }
+}

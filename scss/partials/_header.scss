@@ -1,37 +1,48 @@
 header {
   background-color: map-get($colors, primary);
 
-  .logo{
-    text-decoration: none;
-    color: black;
-  }
-
   .header {
-    @include flexbox(space-evenly, center, wrap);
+    @include flexbox(space-between, center, wrap);
     padding: 10px;
 
-    .look-for{
+    @media (max-width: 800px) {
+      justify-content: space-evenly;
+    }
+
+    .logo {
+      text-decoration: none;
+      color: black;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .look-for {
       height: 30px;
       width: 500px;
-      border-radius: 20px;
+      padding: 18px;
+      margin: 5px;
     }
   }
 
-  nav{
+  nav {
+    border-bottom: 1px solid #000;
 
-    ul{
+    ul {
       @include flexbox(space-evenly, center, wrap);
       padding: 10px;
+      margin-bottom: 0;
 
-      li{
+      li {
         list-style: none;
 
-        a{
+        a {
           text-decoration: none;
           color: whitesmoke;
 
-          &:hover{
-            color: map-get($colors, secondary);
+          &:hover {
+            color: #64b1f3;
             font-weight: bold;
           }
         }

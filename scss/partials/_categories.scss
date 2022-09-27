@@ -1,0 +1,31 @@
+.categories {
+  @include flexbox-no-align(space-evenly, wrap);
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+
+  .category {
+    border-radius: 50%;
+
+    img {
+      object-fit: cover;
+    }
+
+    &:hover {
+      transform: translatY(-15px);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px) {
+      width: 70px;
+      height: 70px;
+    }
+    @media (min-width: 1024px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

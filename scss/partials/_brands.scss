@@ -1,0 +1,25 @@
+.brands {
+  @include flexbox-no-align(space-around, wrap);
+  margin-top: 20px;
+
+  .brands__item {
+    @include flexbox(center, center);
+    border: 1px solid #000;
+    border-style: solid;
+    background-color: #ffa69b;
+    color: #333333;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+
+    img,
+    p {
+      margin: 5px;
+    }
+
+    &:hover {
+      transform: translatY(-15px);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

@@ -1,23 +1,36 @@
 footer{
 
   .footer__info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flexbox-no-align(space-around, wrap);
     background-color: map-get($colors, terciary);
 
     .methods{
       padding: 2vw;
+      color: #fff;
+
+      .methods-visa {
+        width: 80px;
+      }
+      .methods-mercadopago {
+        width: 120px;
+      }
+      .methods-correo {
+        width: 110px;
+      }
     }
 
     .social{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexbox(center, center);
       padding: 2vw;
 
       .social-item{
         margin: 1rem;
+        font-size: 30px;
+
+        i:hover {
+          transform: translatY(-35px);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
       }
     }
   }

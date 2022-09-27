@@ -1,0 +1,21 @@
+.custom-card {
+  max-height: 480px;
+
+  &:hover {
+    transform: translatY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  .card__body {
+    padding: 10px;
+    text-align: center;
+  }
+  .card__picture img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  h2,
+  h3 {
+    font-size: 1.25rem;
+  }
+}

@@ -10,3 +10,6 @@ This e-commerce was made for Coderhouse Web Development course.
 - Saas - https://sass-lang.com/
 - Node - https://nodejs.org/es/
 - Swiper - https://swiperjs.com/
+
+# Sass script
+- Compiling: sass scss\style.scss css\style.css

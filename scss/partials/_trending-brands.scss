@@ -1,0 +1,27 @@
+.trending-brands {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .trending-brands__logos {
+    @include flexbox-no-align(space-between, wrap);
+    margin-top: 30px;
+
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 7px;
+
+      &:hover {
+        transform: translatY(-15px);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (min-width: 480px) {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+      }
+    }
+  }
+}
